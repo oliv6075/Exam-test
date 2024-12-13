@@ -1,4 +1,4 @@
-# To get data from Postgres to R
+# To get data from Postgres to R.com
 psql_select <- function(cred, query_string){
   con_postgre <- DBI::dbConnect(RPostgres::Postgres(),
                                 dbname = cred$dbname,
@@ -44,4 +44,4 @@ psql_append_df <- function(cred, schema_name, tab_name, df){
   dbDisconnect(con_postgre)
 }
 
-lol
+lolleren man
