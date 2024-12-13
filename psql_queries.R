@@ -1,4 +1,4 @@
-# To get data from Postgres to R
+# To get data from Postgres to Rhey ho man sidkw
 psql_select <- function(cred, query_string){
   con_postgre <- DBI::dbConnect(RPostgres::Postgres(),
                                 dbname = cred$dbname,
@@ -36,12 +36,7 @@ psql_append_df <- function(cred, schema_name, tab_name, df){
                                 user      = cred$user,
                                 pass      = cred$pass,
                                 port = cred$port)
-  
-  query_res <- dbAppendTable(con = con_postgre, 
-                name = Id(schema = schema_name, table = tab_name), 
-                value = df)
-  print(paste0("Number of rows inserted: ",  query_res))
-  dbDisconnect(con_postgre)
+
 }
 
-lol
+lol mayn
