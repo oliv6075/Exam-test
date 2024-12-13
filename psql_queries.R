@@ -43,3 +43,5 @@ psql_append_df <- function(cred, schema_name, tab_name, df){
   print(paste0("Number of rows inserted: ",  query_res))
   dbDisconnect(con_postgre)
 }
+
+lol
