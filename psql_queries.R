@@ -40,5 +40,4 @@ psql_append_df <- function(cred, schema_name, tab_name, df){
 
 }
 
-hakkdwdpoekdokwmpw
-ål
+hakkdwdpoekdok
